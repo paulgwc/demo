@@ -8,10 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 //    @AuthorAnnotion()
     @RequestMapping("/demo")
-    public void test(){
-        System.out.println("这是一个测试接口！");
-        String a = null;
-        a.toString();
-//        DingDingMessageUtil.sendTextMessage("测试！");
+    public String test(){
+        return "这是一个测试jenkins的项目！";
     }
 }
