@@ -9,6 +9,6 @@ public class Controller {
 //    @AuthorAnnotion()
     @RequestMapping("/demo")
     public String test(){
-        return "这是一个测试jenkins的项目！";
+        return "这是第二个测试jenkins的代码";
     }
 }
