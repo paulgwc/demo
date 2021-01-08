@@ -1,9 +1,8 @@
 package com.gwc.demo;
 
-import com.gwc.demo.dingTalk.DingDingMessageUtil;
+import com.gwc.demo.learn.dingTalk.DingDingMessageUtil;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -15,7 +14,7 @@ import java.util.stream.Collectors;
 @ControllerAdvice
 public class CallControllerExceptionHandler {
 
-    @ExceptionHandler(value = Exception.class)
+//    @ExceptionHandler(value = Exception.class)
     public void exceptionHandler(Exception exception) throws ClassNotFoundException {
         StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);
