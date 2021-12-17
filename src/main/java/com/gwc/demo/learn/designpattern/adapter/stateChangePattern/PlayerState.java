@@ -7,7 +7,7 @@ package com.gwc.demo.learn.designpattern.adapter.stateChangePattern;
  * @create: 2021-12-10 18:57
  */
 public abstract class PlayerState {
-    public final static int PLAY_OR_PAUSE  = 0;
+    public final static int PLAY_OR_PAUSE = 0;
     public final static int STOP = 1;
     protected IPlayer mPlayer;
 
@@ -19,6 +19,7 @@ public abstract class PlayerState {
 
     @Override
     public String toString() {
-        return "current state:"+this.getClass().getSimpleName();
+        return "current state:" + this.getClass().getSimpleName();
     }
 }
+// TODO: 2021/12/17 cherry git 
