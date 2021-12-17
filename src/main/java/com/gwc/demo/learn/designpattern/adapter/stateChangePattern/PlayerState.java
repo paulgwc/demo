@@ -22,4 +22,3 @@ public abstract class PlayerState {
         return "current state:" + this.getClass().getSimpleName();
     }
 }
-// TODO: 2021/12/17 cherry git 
