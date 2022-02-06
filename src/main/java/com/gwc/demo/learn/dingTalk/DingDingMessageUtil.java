@@ -9,7 +9,7 @@ public class DingDingMessageUtil {
         try {
             Message message = new Message();
             message.setMsgtype("text");
-            message.setText(new MessageInfo("项目名："+projectName+"\n负责人@"+author+"\n"+msg+"测试"));
+//            message.setText(new MessageInfo("项目名："+projectName+"\n负责人@"+author+"\n"+msg+"测试"));
             URL url = new URL("https://oapi.dingtalk.com/robot/send?access_token=" + access_token);
 //            // 建立 http 连接
 //            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -49,9 +49,9 @@ class Message {
     public MessageInfo getText() {
         return text;
     }
-    public void setText(MessageInfo text) {
-        this.text = text;
-    }
+//    public void setText(MessageInfo text) {
+//        this.text = text;
+//    }
 }
 
 class MessageInfo {

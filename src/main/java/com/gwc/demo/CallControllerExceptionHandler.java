@@ -27,7 +27,7 @@ public class CallControllerExceptionHandler {
         List<Method> ms= Arrays.stream(methods).filter(m->m.getName().equals(methodName)).collect(Collectors.toList());
         String author = null;
         if (ms.get(0).isAnnotationPresent(AuthorAnnotion.class)){
-            author = ms.get(0).getAnnotation(AuthorAnnotion.class).name();
+//            author = ms.get(0).getAnnotation(AuthorAnnotion.class).name();
         }
         DingDingMessageUtil.sendTextMessage(sw.toString(),author,null);
         exception.printStackTrace();
